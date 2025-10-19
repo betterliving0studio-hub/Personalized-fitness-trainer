@@ -774,3 +774,28 @@ footer {
     height: clamp(180px, 40vw, 280px);
   }
 }
+
+
+.btn-tutorial {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #E67E22;     /* Theme color */
+  color: #FFFFFF;          /* Text color */
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+/* Hover effect */
+.btn-tutorial:hover {
+  background: #cf6d15;    /* Slightly darker shade */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .btn-tutorial {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
