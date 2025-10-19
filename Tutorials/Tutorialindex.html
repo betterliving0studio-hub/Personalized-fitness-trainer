@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tutorials - BetterLiving Studio</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    .tutorial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    .tutorial-card {
+      background-color: var(--secondary-dark);
+      padding: 2rem;
+      border-radius: 16px;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    .tutorial-card:hover {
+      transform: translateY(-10px);
+      border-color: var(--accent-green);
+      box-shadow: 0 15px 40px rgba(46, 204, 113, 0.2);
+    }
+    
+    .tutorial-icon {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .tutorial-card h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--text-white);
+    }
+    
+    .tutorial-card p {
+      color: var(--text-gray);
+      line-height: 1.6;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+    
+    .tutorial-card .btn {
+      margin-top: auto;
+    }
+    
+    .tutorials-hero {
+      background: linear-gradient(135deg, var(--secondary-dark) 0%, var(--primary-dark) 100%);
+      padding: 4rem 2rem;
+      text-align: center;
+      margin-bottom: 3rem;
+      border-radius: 20px;
+    }
+    
+    .tutorials-hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--text-white);
+    }
+    
+    .tutorials-hero p {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      color: var(--text-gray);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">BetterLiving Studio</div>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#goals">Goals</a></li>
+          <li><a href="../index.html#product">Product</a></li>
+          <li><a href="../index.html#tutorials">Tutorials</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Tutorials Hero -->
+  <section class="section">
+    <div class="container">
+      <div class="tutorials-hero">
+        <h1>Exercise Tutorials</h1>
+        <p>Learn proper form and technique with our comprehensive AI-guided tutorials</p>
+      </div>
+
+      <!-- Tutorials Grid -->
+      <div class="tutorial-grid">
+        <!-- Tutorial 1: Push-ups -->
+        <div class="tutorial-card">
+          <div>
+            <div class="tutorial-icon">💪</div>
+            <h3>Push-Ups</h3>
+            <p>Master the perfect push-up with step-by-step guidance, muscle targeting info, and common mistakes to avoid.</p>
+          </div>
+          <a href="./Tut1/tut1.html" class="btn">Start Tutorial</a>
+        </div>
+
+        <!-- Tutorial 2: Squats -->
+        
+
+        <!-- Tutorial 3: Planks -->
+        <div class="tutorial-card">
+          <div>
+            <div class="tutorial-icon">🧘</div>
+            <h3>Planks</h3>
+            <p>Strengthen your core with proper plank technique. Discover different variations and progression methods.</p>
+          </div>
+          <a href="./extra.html" class="btn btn-secondary">Coming Soon</a>
+        </div>
+
+        <!-- Tutorial 4: Pull-ups -->
+        <div class="tutorial-card">
+          <div>
+            <div class="tutorial-icon">🏋️</div>
+            <h3>Pull-Ups</h3>
+            <p>Develop upper body strength with pull-ups. Learn proper grip, form, and progression techniques.</p>
+          </div>
+          <a href="./extra.html" class="btn btn-secondary">Coming Soon</a>
+        </div>
+
+        <!-- Tutorial 5: Lunges -->
+        <div class="tutorial-card">
+          <div>
+            <div class="tutorial-icon">🚶</div>
+            <h3>Lunges</h3>
+            <p>Enhance leg strength and balance with lunges. Explore different variations and proper execution.</p>
+          </div>
+          <a href="./extra.html" class="btn btn-secondary">Coming Soon</a>
+        </div>
+
+        <!-- Tutorial 6: Burpees -->
+        <div class="tutorial-card">
+          <div>
+            <div class="tutorial-icon">⚡</div>
+            <h3>Burpees</h3>
+            <p>Full-body conditioning with burpees. Learn the correct form for this high-intensity exercise.</p>
+          </div>
+          <a href="./extra.html" class="btn btn-secondary">Coming Soon</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 BetterLiving Studio. All rights reserved.</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+
+    if (menuToggle && nav) {
+      menuToggle.addEventListener('click', function() {
+        this.classList.toggle('active');
+        nav.classList.toggle('active');
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', function(e) {
+        if (!nav.contains(e.target) && !menuToggle.contains(e.target)) {
+          nav.classList.remove('active');
+          menuToggle.classList.remove('active');
+        }
+      });
+
+      // Close menu on window resize if desktop view
+      window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+          nav.classList.remove('active');
+          menuToggle.classList.remove('active');
+        }
+      });
+    }
+  </script>
+</body>
+</html>

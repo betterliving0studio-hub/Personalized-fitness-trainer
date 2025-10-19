@@ -3,90 +3,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FitAI - Personalized Fitness Trainer</title>
+  <title>BetterLiving Studio - AI Fitness Trainer</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
 </head>
 <body>
   <!-- Header -->
   <header>
-    <div class="logo">BetterLiving Studio</div>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#goals">Goals</a></li>
-        <li><a href="#product">Product</a></li>
-        <li><a href="./Tutorials/Tut1/tut1.html">Tutorials</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <div class="logo">BetterLiving Studio</div>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#goals">Goals</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="./Tutorials/Tutorialindex.html">Tutorials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- Hero Section -->
-  <div class="hero">
+  <section class="hero">
+    <div class="hero-overlay"></div>
     <div class="hero-content">
       <h1>Your Personalized AI Fitness Trainer</h1>
       <p>Transform your workouts with real-time AI guidance, motivation, and feedback.</p>
       <a href="#product" class="btn">Explore Product</a>
     </div>
-  </div>
+  </section>
 
   <!-- About Section -->
-  <section id="about">
-    <h2>About Our Company</h2>
-    <div class="card">
-      <p>
-        At <strong>BetterLiving Studio</strong>, we are building a personalized fitness trainer 
-        powered by artificial intelligence. Our mission is to make fitness 
-        accessible, engaging, and tailored to every individual.
-      </p>
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Our Company</h2>
+      <div class="content-card">
+        <p>
+          At <strong>BetterLiving Studio</strong>, we are building a personalized fitness trainer
+          powered by artificial intelligence. Our mission is to make fitness
+          accessible, engaging, and tailored to every individual.
+        </p>
+      </div>
     </div>
   </section>
 
   <!-- Goals Section -->
-  <section id="goals">
-    <h2>Our Goals</h2>
-    <div class="cards">
-      <div class="card">💬 AI-driven real-time feedback on exercises.</div>
-      <div class="card">🔥 Enhance motivation with personalized sessions.</div>
-      <div class="card">🤝 Bridge the gap between traditional fitness and AI.</div>
+  <section id="goals" class="section section-dark">
+    <div class="container">
+      <h2>Our Goals</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">💬</div>
+          <h3>Real-Time Feedback</h3>
+          <p>AI-driven real-time feedback on exercises for optimal performance.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🔥</div>
+          <h3>Enhanced Motivation</h3>
+          <p>Personalized sessions designed to keep you motivated and engaged.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🤝</div>
+          <h3>Bridge the Gap</h3>
+          <p>Connecting traditional fitness methods with cutting-edge AI technology.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Product Section -->
-  <section id="product">
-    <h2>Our Product</h2>
-    <div class="card">
-      <p>
-        The BetterLiving Studio trainer demonstrates exercises, then observes your performance 
-        via camera. You get instant feedback on whether your form is correct, 
-        helping you improve safely and effectively.
-      </p>
-      <a href="./Tutorials/Tut1/tut1.html">View Push-Up Tutorial</a>
+  <section id="product" class="section">
+    <div class="container">
+      <h2>Our Product</h2>
+      <div class="content-card product-card">
+        <p>
+          The BetterLiving Studio trainer demonstrates exercises, then observes your performance
+          via camera. You get instant feedback on whether your form is correct,
+          helping you improve safely and effectively.
+        </p>
+      </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:support@BetterLiving Studio.com">support@BetterLivingstudio.com</a></p>
-    <p>Phone: +92 300 1234567</p>
-    <p>Address: PIEAS, Islamabad, Pakistan</p>
+  <section id="contact" class="section section-dark">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <div class="contact-content">
+        <div class="contact-group">
+          <h3>Get In Touch</h3>
+          <p><strong>Email:</strong> <a href="mailto:support@betterlivingstudio.com">betterliving0studio@gmail.com</a></p>
+          <p><strong>Phone:</strong> +92 300 1234567</p>
+          <p><strong>Address:</strong>Islamabad, Pakistan</p>
+        </div>
+        
+        <div class="contact-group">
+          <h3>Follow Us</h3>
+          <ul class="social-links">
+            <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          </ul>
+        </div>
+
+        <div class="contact-group">
+          <h3>Quick Links</h3>
+          <ul class="quick-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#goals">Our Goals</a></li>
+            <li><a href="#product">Our Product</a></li>
+            <li><a href="./Tutorials/Tut1/tut1.html">Tutorials</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 BetterLiving Studio. All rights reserved.</p>
-    <div class="socials">
-      <a href="#"><i class="fab fa-facebook"></i></a>
-      <a href="#"><i class="fab fa-twitter"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
+    <div class="container">
+      <p>&copy; 2025 BetterLiving Studio. All rights reserved.</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
     </div>
   </footer>
 
